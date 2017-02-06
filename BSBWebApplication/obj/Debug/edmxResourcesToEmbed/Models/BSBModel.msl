@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BSBDatabaseModelStoreContainer" CdmEntityContainer="BSBDatabaseEntities">
+    <EntitySetMapping Name="ParSys">
+      <EntityTypeMapping TypeName="BSBDatabaseModel.ParSy">
+        <MappingFragment StoreEntitySet="ParSys">
+          <ScalarProperty Name="PAR_ID" ColumnName="PAR_ID" />
+          <ScalarProperty Name="INST_ID" ColumnName="INST_ID" />
+          <ScalarProperty Name="GRUPA_ID" ColumnName="GRUPA_ID" />
+          <ScalarProperty Name="PARAMETR_ID" ColumnName="PARAMETR_ID" />
+          <ScalarProperty Name="PARAMETR_NAZWA" ColumnName="PARAMETR_NAZWA" />
+          <ScalarProperty Name="PARAMETR_TYP" ColumnName="PARAMETR_TYP" />
+          <ScalarProperty Name="WARTOSC" ColumnName="WARTOSC" />
+          <ScalarProperty Name="WART_MIN" ColumnName="WART_MIN" />
+          <ScalarProperty Name="WART_MAX" ColumnName="WART_MAX" />
+          <ScalarProperty Name="SHOW_IT" ColumnName="SHOW_IT" />
+          <ScalarProperty Name="INFO" ColumnName="INFO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

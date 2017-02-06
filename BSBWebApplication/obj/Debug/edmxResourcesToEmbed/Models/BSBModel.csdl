@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BSBDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ParSy">
+    <Key>
+      <PropertyRef Name="PAR_ID" />
+    </Key>
+    <Property Name="PAR_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="INST_ID" Type="Int32" />
+    <Property Name="GRUPA_ID" Type="Int32" Nullable="false" />
+    <Property Name="PARAMETR_ID" Type="Int32" Nullable="false" />
+    <Property Name="PARAMETR_NAZWA" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PARAMETR_TYP" Type="Int32" Nullable="false" />
+    <Property Name="WARTOSC" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="WART_MIN" Type="Int32" />
+    <Property Name="WART_MAX" Type="Int32" />
+    <Property Name="SHOW_IT" Type="Boolean" Nullable="false" />
+    <Property Name="INFO" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="BSBDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ParSys" EntityType="Self.ParSy" />
+  </EntityContainer>
+</Schema>
